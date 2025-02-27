@@ -1,16 +1,16 @@
 <?xml version="1.0" ?>
 
-<TestCase name="Git_Commit_Push_Changes" version="5">
+<TestCase name="Git_Create_New_tag" version="5">
 
 <meta>
-   <create version="10.8.1" buildNumber="10.8.1.2174" author="admin" date="02/07/2025" host="C02CP01UPWDG" />
+   <create version="10.8.1" buildNumber="10.8.1.2174" author="admin" date="02/08/2025" host="C02CP01UPWDG" />
    <lastEdited version="10.8.1" buildNumber="10.8.1.2174" author="admin" date="02/27/2025" host="5TVRDY3" />
 </meta>
 
-<id>F0B85170E54511EFB36EE252AE6C1D05</id>
+<id>E72E1D12E5F211EFBCE6E252AE6C1D05</id>
 <Documentation>Put documentation of the Test Case here.</Documentation>
 <IsInProject>true</IsInProject>
-<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj0xMC44LjEgKDEwLjguMS4yMTc0KSZub2Rlcz0tNzM4NjM2OTQw</sig>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj0xMC44LjEgKDEwLjguMS4yMTc0KSZub2Rlcz0xNDE4MTQ5OTg2</sig>
 <subprocess>false</subprocess>
 
 <initState>
@@ -22,16 +22,16 @@
 <deletedProps>
 </deletedProps>
 
-    <Node name="git status" log=""
+    <Node name="git tag" log=""
           type="com.itko.lisa.utils.CommandLineExecNode" 
           version="1" 
-          uid="9F7EA2A9E5F111EFBCE6E252AE6C1D05" 
+          uid="1825F93AE5F311EFBCE6E252AE6C1D05" 
           think="500-1S" 
           useFilters="true" 
           quiet="false" 
-          next="git add *" > 
+          next="git push tag" > 
 
-<cmd>git status</cmd>
+<cmd>git tag &quot;{{GIT_TAG}}&quot;</cmd>
 <basedir>{{LISA_RELATIVE_PROJ_ROOT}}</basedir>
 <toNode>abort</toNode>
 <exceptionNode>abort</exceptionNode>
@@ -49,70 +49,16 @@
     </Node>
 
 
-    <Node name="git add *" log=""
+    <Node name="git push tag" log=""
           type="com.itko.lisa.utils.CommandLineExecNode" 
           version="1" 
-          uid="E3C370D8E5F111EFBCE6E252AE6C1D05" 
-          think="500-1S" 
-          useFilters="true" 
-          quiet="false" 
-          next="git commit" > 
-
-<cmd>git add * </cmd>
-<basedir>{{LISA_RELATIVE_PROJ_ROOT}}</basedir>
-<toNode>abort</toNode>
-<exceptionNode>abort</exceptionNode>
-<timeOut>300</timeOut>
-<killAtEnd>false</killAtEnd>
-<wait>true</wait>
-<addToEnv>false</addToEnv>
-<spawn>false</spawn>
-<execShell>false</execShell>
-<charset>DEFAULT</charset>
-<env>
-</env>
-<exitCodes>
-</exitCodes>
-    </Node>
-
-
-    <Node name="git commit" log=""
-          type="com.itko.lisa.utils.CommandLineExecNode" 
-          version="1" 
-          uid="EFC0E5B7E5F111EFBCE6E252AE6C1D05" 
-          think="500-1S" 
-          useFilters="true" 
-          quiet="false" 
-          next="git push origin" > 
-
-<cmd>git commit -m &quot;{{GIT_COMMIT_MESSAGE}}&quot;</cmd>
-<basedir>{{LISA_RELATIVE_PROJ_ROOT}}</basedir>
-<toNode>abort</toNode>
-<exceptionNode>abort</exceptionNode>
-<timeOut>300</timeOut>
-<killAtEnd>false</killAtEnd>
-<wait>true</wait>
-<addToEnv>false</addToEnv>
-<spawn>false</spawn>
-<execShell>false</execShell>
-<charset>DEFAULT</charset>
-<env>
-</env>
-<exitCodes>
-</exitCodes>
-    </Node>
-
-
-    <Node name="git push origin" log=""
-          type="com.itko.lisa.utils.CommandLineExecNode" 
-          version="1" 
-          uid="59BE96C6E5F711EFBCE6E252AE6C1D05" 
+          uid="301E9A7EE5F311EFBCE6E252AE6C1D05" 
           think="500-1S" 
           useFilters="true" 
           quiet="false" 
           next="end" > 
 
-<cmd>git push origin&#9;</cmd>
+<cmd>git push origin {{GIT_TAG}}:{{GIT_TAG}}</cmd>
 <basedir>{{LISA_RELATIVE_PROJ_ROOT}}</basedir>
 <toNode>abort</toNode>
 <exceptionNode>abort</exceptionNode>
@@ -133,7 +79,7 @@
     <Node name="end" log=""
           type="com.itko.lisa.test.NormalEnd" 
           version="1" 
-          uid="F0B87886E54511EFB36EE252AE6C1D05" 
+          uid="E72E1D18E5F211EFBCE6E252AE6C1D05" 
           think="0h" 
           useFilters="true" 
           quiet="true" 
@@ -145,7 +91,7 @@
     <Node name="fail" log=""
           type="com.itko.lisa.test.Abend" 
           version="1" 
-          uid="F0B87884E54511EFB36EE252AE6C1D05" 
+          uid="E72E1D16E5F211EFBCE6E252AE6C1D05" 
           think="0h" 
           useFilters="true" 
           quiet="true" 
@@ -157,7 +103,7 @@
     <Node name="abort" log=""
           type="com.itko.lisa.test.AbortStep" 
           version="1" 
-          uid="F0B87882E54511EFB36EE252AE6C1D05" 
+          uid="E72E1D14E5F211EFBCE6E252AE6C1D05" 
           think="0h" 
           useFilters="true" 
           quiet="true" 

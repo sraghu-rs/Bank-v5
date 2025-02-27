@@ -10,7 +10,7 @@
 <id>F0B85170E54511EFB36EE252AE6C1D05</id>
 <Documentation>Put documentation of the Test Case here.</Documentation>
 <IsInProject>true</IsInProject>
-<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj0xMC44LjEgKDEwLjguMS4yMTc0KSZub2Rlcz0tNzM4NjM2OTQw</sig>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj0xMC44LjEgKDEwLjguMS4yMTc0KSZub2Rlcz0xMzIzMjY3ODMx</sig>
 <subprocess>false</subprocess>
 
 <initState>
@@ -56,9 +56,43 @@
           think="500-1S" 
           useFilters="true" 
           quiet="false" 
-          next="git commit" > 
+          next="Command date" > 
 
 <cmd>git add * </cmd>
+<basedir>{{LISA_RELATIVE_PROJ_ROOT}}</basedir>
+<toNode>abort</toNode>
+<exceptionNode>abort</exceptionNode>
+<timeOut>300</timeOut>
+<killAtEnd>false</killAtEnd>
+<wait>true</wait>
+<addToEnv>false</addToEnv>
+<spawn>false</spawn>
+<execShell>false</execShell>
+<charset>DEFAULT</charset>
+<env>
+</env>
+<exitCodes>
+</exitCodes>
+    </Node>
+
+
+    <Node name="Command date" log=""
+          type="com.itko.lisa.utils.CommandLineExecNode" 
+          version="1" 
+          uid="474A02D4F53111EFB988B0DCEF83C615" 
+          think="500-1S" 
+          useFilters="true" 
+          quiet="false" 
+          next="git commit" > 
+
+
+      <!-- Filters -->
+      <Filter type="com.itko.lisa.test.FilterSaveResponse">
+        <valueToFilterKey>lisa.Command date.rsp</valueToFilterKey>
+      <prop>current_date</prop>
+      </Filter>
+
+<cmd>cmd /c date /t</cmd>
 <basedir>{{LISA_RELATIVE_PROJ_ROOT}}</basedir>
 <toNode>abort</toNode>
 <exceptionNode>abort</exceptionNode>
@@ -85,7 +119,7 @@
           quiet="false" 
           next="git push origin" > 
 
-<cmd>git commit -m &quot;{{GIT_COMMIT_MESSAGE}}&quot;</cmd>
+<cmd>git commit -m &quot;{{GIT_COMMIT_MESSAGE}} Date: {{current_date}}&quot;</cmd>
 <basedir>{{LISA_RELATIVE_PROJ_ROOT}}</basedir>
 <toNode>abort</toNode>
 <exceptionNode>abort</exceptionNode>
@@ -130,14 +164,14 @@
     </Node>
 
 
-    <Node name="end" log=""
-          type="com.itko.lisa.test.NormalEnd" 
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
           version="1" 
-          uid="F0B87886E54511EFB36EE252AE6C1D05" 
+          uid="F0B87882E54511EFB36EE252AE6C1D05" 
           think="0h" 
           useFilters="true" 
           quiet="true" 
-          next="fail" > 
+          next="" > 
 
     </Node>
 
@@ -154,14 +188,14 @@
     </Node>
 
 
-    <Node name="abort" log=""
-          type="com.itko.lisa.test.AbortStep" 
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
           version="1" 
-          uid="F0B87882E54511EFB36EE252AE6C1D05" 
+          uid="F0B87886E54511EFB36EE252AE6C1D05" 
           think="0h" 
           useFilters="true" 
           quiet="true" 
-          next="" > 
+          next="fail" > 
 
     </Node>
 

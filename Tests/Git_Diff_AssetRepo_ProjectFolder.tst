@@ -1,16 +1,16 @@
 <?xml version="1.0" ?>
 
-<TestCase name="Git_Create_New_tag" version="5">
+<TestCase name="Git_Diff_AssetRepo_ProjectFolder" version="5">
 
 <meta>
-   <create version="10.8.1" buildNumber="10.8.1.2174" author="admin" date="02/08/2025" host="C02CP01UPWDG" />
+   <create version="10.8.1" buildNumber="10.8.1.2174" author="admin" date="02/27/2025" host="5TVRDY3" />
    <lastEdited version="10.8.1" buildNumber="10.8.1.2174" author="admin" date="02/27/2025" host="5TVRDY3" />
 </meta>
 
-<id>E72E1D12E5F211EFBCE6E252AE6C1D05</id>
+<id>C44ABB1AF52D11EFB988B0DCEF83C615</id>
 <Documentation>Put documentation of the Test Case here.</Documentation>
 <IsInProject>true</IsInProject>
-<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj0xMC44LjEgKDEwLjguMS4yMTc0KSZub2Rlcz0xNDE4MTQ5OTg2</sig>
+<sig>ZWQ9NSZ0Y3Y9LTEmbGlzYXY9MTAuOC4xICgxMC44LjEuMjE3NCkmbm9kZXM9LTkwMDY0Mzk2MQ==</sig>
 <subprocess>false</subprocess>
 
 <initState>
@@ -19,46 +19,16 @@
 <resultState>
 </resultState>
 
-<deletedProps>
-</deletedProps>
-
-    <Node name="git tag" log=""
+    <Node name="git diff" log=""
           type="com.itko.lisa.utils.CommandLineExecNode" 
           version="1" 
-          uid="1825F93AE5F311EFBCE6E252AE6C1D05" 
-          think="500-1S" 
-          useFilters="true" 
-          quiet="false" 
-          next="git push tag" > 
-
-<cmd>git tag &quot;{{GIT_TAG}}&quot;</cmd>
-<basedir>{{LISA_RELATIVE_PROJ_ROOT}}</basedir>
-<toNode>abort</toNode>
-<exceptionNode>abort</exceptionNode>
-<timeOut>300</timeOut>
-<killAtEnd>false</killAtEnd>
-<wait>true</wait>
-<addToEnv>false</addToEnv>
-<spawn>false</spawn>
-<execShell>false</execShell>
-<charset>DEFAULT</charset>
-<env>
-</env>
-<exitCodes>
-</exitCodes>
-    </Node>
-
-
-    <Node name="git push tag" log=""
-          type="com.itko.lisa.utils.CommandLineExecNode" 
-          version="1" 
-          uid="301E9A7EE5F311EFBCE6E252AE6C1D05" 
+          uid="D0F3B342F52D11EFB988B0DCEF83C615" 
           think="500-1S" 
           useFilters="true" 
           quiet="false" 
           next="end" > 
 
-<cmd>git push origin {{GIT_TAG}}:{{GIT_TAG}}</cmd>
+<cmd>git diff</cmd>
 <basedir>{{LISA_RELATIVE_PROJ_ROOT}}</basedir>
 <toNode>abort</toNode>
 <exceptionNode>abort</exceptionNode>
@@ -79,7 +49,7 @@
     <Node name="end" log=""
           type="com.itko.lisa.test.NormalEnd" 
           version="1" 
-          uid="E72E1D18E5F211EFBCE6E252AE6C1D05" 
+          uid="C44ABB20F52D11EFB988B0DCEF83C615" 
           think="0h" 
           useFilters="true" 
           quiet="true" 
@@ -91,7 +61,7 @@
     <Node name="fail" log=""
           type="com.itko.lisa.test.Abend" 
           version="1" 
-          uid="E72E1D16E5F211EFBCE6E252AE6C1D05" 
+          uid="C44ABB1EF52D11EFB988B0DCEF83C615" 
           think="0h" 
           useFilters="true" 
           quiet="true" 
@@ -103,7 +73,7 @@
     <Node name="abort" log=""
           type="com.itko.lisa.test.AbortStep" 
           version="1" 
-          uid="E72E1D14E5F211EFBCE6E252AE6C1D05" 
+          uid="C44ABB1CF52D11EFB988B0DCEF83C615" 
           think="0h" 
           useFilters="true" 
           quiet="true" 

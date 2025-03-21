@@ -31,14 +31,6 @@
           quiet="false" 
           next="git add *" > 
 
-
-      <!-- Assertions -->
-<CheckResult assertTrue="true" name="Ensure Result Contains String" type="com.itko.lisa.test.CheckResultContains">
-<log></log>
-<then>fail</then>
-        <param>rejected</param>
-</CheckResult>
-
 <cmd>git status</cmd>
 <basedir>{{LISA_RELATIVE_PROJ_ROOT}}</basedir>
 <toNode>abort</toNode>
@@ -153,6 +145,14 @@
           useFilters="true" 
           quiet="false" 
           next="end" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Ensure Result Contains String" type="com.itko.lisa.test.CheckResultContains">
+<log></log>
+<then>fail</then>
+        <param>rejected</param>
+</CheckResult>
 
 <cmd>git push origin&#9;</cmd>
 <basedir>{{LISA_RELATIVE_PROJ_ROOT}}</basedir>

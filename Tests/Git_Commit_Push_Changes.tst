@@ -4,7 +4,7 @@
 
 <meta>
    <create version="10.8.1" buildNumber="10.8.1.2174" author="admin" date="02/07/2025" host="C02CP01UPWDG" />
-   <lastEdited version="10.8.1" buildNumber="10.8.1.2174" author="admin" date="02/27/2025" host="5TVRDY3" />
+   <lastEdited version="10.8.1" buildNumber="10.8.1.2174" author="admin" date="03/21/2025" host="5TVRDY3" />
 </meta>
 
 <id>F0B85170E54511EFB36EE252AE6C1D05</id>
@@ -30,6 +30,14 @@
           useFilters="true" 
           quiet="false" 
           next="git add *" > 
+
+
+      <!-- Assertions -->
+<CheckResult assertTrue="true" name="Ensure Result Contains String" type="com.itko.lisa.test.CheckResultContains">
+<log></log>
+<then>fail</then>
+        <param>rejected</param>
+</CheckResult>
 
 <cmd>git status</cmd>
 <basedir>{{LISA_RELATIVE_PROJ_ROOT}}</basedir>
@@ -164,14 +172,14 @@
     </Node>
 
 
-    <Node name="abort" log=""
-          type="com.itko.lisa.test.AbortStep" 
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
           version="1" 
-          uid="F0B87882E54511EFB36EE252AE6C1D05" 
+          uid="F0B87886E54511EFB36EE252AE6C1D05" 
           think="0h" 
           useFilters="true" 
           quiet="true" 
-          next="" > 
+          next="fail" > 
 
     </Node>
 
@@ -188,14 +196,14 @@
     </Node>
 
 
-    <Node name="end" log=""
-          type="com.itko.lisa.test.NormalEnd" 
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
           version="1" 
-          uid="F0B87886E54511EFB36EE252AE6C1D05" 
+          uid="F0B87882E54511EFB36EE252AE6C1D05" 
           think="0h" 
           useFilters="true" 
           quiet="true" 
-          next="fail" > 
+          next="" > 
 
     </Node>
 

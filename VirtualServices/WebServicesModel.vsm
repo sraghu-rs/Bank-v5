@@ -4,13 +4,13 @@
 
 <meta>
    <create version="0.0" buildNumber="0.0.0.0" author="admin" date="09/30/2014" host="localhost" />
-   <lastEdited version="0.0" buildNumber="0.0.0.0" author="admin" date="09/30/2014" host="localhost" />
+   <lastEdited version="10.8.1" buildNumber="10.8.1.2174" author="admin" date="03/21/2025" host="5TVRDY3" />
 </meta>
 
 <id>88edef18</id>
 <Documentation>{{LISA_PROJ_ROOT}}/VirtualServices/VRScenarios/WebServicesModel.vrs</Documentation>
 <IsInProject>true</IsInProject>
-<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj0wLjAgKDAuMC4wLjApJm5vZGVzPS00Nzk5MDQ1MzE=</sig>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj0xMC44LjEgKDEwLjguMS4yMTc0KSZub2Rlcz0tNDc5OTA0NTMx</sig>
 <subprocess>false</subprocess>
 
 <initState>
@@ -26,18 +26,20 @@
           type="com.itko.lisa.vse.stateful.protocol.http.HttpListenStep" 
           version="1" 
           uid="88edef18-HTTP%2FS+Listen" 
-          think="0-0" 
+          think="0" 
           useFilters="true" 
           quiet="true" 
           next="Prepare Request" > 
 
 <outputAsObject>false</outputAsObject>
 <onExceptionStep>abort</onExceptionStep>
-<listenPort>8001</listenPort>
+<listenPort>28101</listenPort>
+<bindAddress></bindAddress>
 <basePath>/itko-examples/services/UserControlService</basePath>
 <dataProtocol>com.itko.lisa.vse.stateful.protocol.ws.WSSOAPProtocolHandler</dataProtocol>
 <bindOnly>false</bindOnly>
 <useSSL>false</useSSL>
+<sslClientAuthType>none</sslClientAuthType>
     </Node>
 
 
@@ -97,14 +99,14 @@
     </Node>
 
 
-    <Node name="abort" log=""
-          type="com.itko.lisa.test.AbortStep" 
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
           version="1" 
-          uid="88edef18-abort" 
-          think="0h" 
+          uid="88edef18-end" 
+          think="0-0" 
           useFilters="true" 
           quiet="true" 
-          next="end" > 
+          next="fail" > 
 
     </Node>
 
@@ -121,14 +123,14 @@
     </Node>
 
 
-    <Node name="end" log=""
-          type="com.itko.lisa.test.NormalEnd" 
+    <Node name="abort" log=""
+          type="com.itko.lisa.test.AbortStep" 
           version="1" 
-          uid="88edef18-end" 
-          think="0-0" 
+          uid="88edef18-abort" 
+          think="0h" 
           useFilters="true" 
           quiet="true" 
-          next="fail" > 
+          next="end" > 
 
     </Node>
 

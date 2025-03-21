@@ -10,7 +10,7 @@
 <id>F0B85170E54511EFB36EE252AE6C1D05</id>
 <Documentation>Put documentation of the Test Case here.</Documentation>
 <IsInProject>true</IsInProject>
-<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj0xMC44LjEgKDEwLjguMS4yMTc0KSZub2Rlcz0xMzIzMjY3ODMx</sig>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj0xMC44LjEgKDEwLjguMS4yMTc0KSZub2Rlcz04MzQ5NzYxNjk=</sig>
 <subprocess>false</subprocess>
 
 <initState>
@@ -56,7 +56,7 @@
           think="500-1S" 
           useFilters="true" 
           quiet="false" 
-          next="Command date" > 
+          next="Current Date" > 
 
 <cmd>git add * </cmd>
 <basedir>{{LISA_RELATIVE_PROJ_ROOT}}</basedir>
@@ -76,7 +76,7 @@
     </Node>
 
 
-    <Node name="Command date" log=""
+    <Node name="Current Date" log=""
           type="com.itko.lisa.utils.CommandLineExecNode" 
           version="1" 
           uid="474A02D4F53111EFB988B0DCEF83C615" 
@@ -88,7 +88,7 @@
 
       <!-- Filters -->
       <Filter type="com.itko.lisa.test.FilterSaveResponse">
-        <valueToFilterKey>lisa.Command date.rsp</valueToFilterKey>
+        <valueToFilterKey>lisa.Current Date.rsp</valueToFilterKey>
       <prop>current_date</prop>
       </Filter>
 

@@ -118,7 +118,6 @@
 
     </Node>
 
-
     <Node name="end" log=""
           type="com.itko.lisa.test.NormalEnd" 
           version="1" 

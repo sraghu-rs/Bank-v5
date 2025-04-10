@@ -67,7 +67,6 @@
 <onExceptionStep>abort</onExceptionStep>
     </Node>
 
-
     <Node name="Prepare Response" log=""
           type="com.itko.lisa.utils.ParseTextContentNode" 
           version="1" 

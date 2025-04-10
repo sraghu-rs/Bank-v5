@@ -134,7 +134,6 @@
 <propKey>lisa.vse.response</propKey>
     </Node>
 
-
     <Node name="HTTP/S Respond" log=""
           type="com.itko.lisa.vse.stateful.protocol.http.HttpRespondStep" 
           version="1" 

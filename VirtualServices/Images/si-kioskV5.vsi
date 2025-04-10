@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 
 <serviceImage id="1" name="kioskV5" created="2010-01-26.15:19:15.686" lastModified="2011-01-05.16:26:36.932" version="5.0.3" buildNumber="0.0.0.0">
+
 <cnvs>
 <cnv id="2" n="Conversation 1" t="TOKEN" tp="-DDhhhDDh:DDDDhDhhhDh:-Dhhh">
 <t id="3" nd="true" n="WIDE">

@@ -49,8 +49,6 @@
 <bindOnly>false</bindOnly>
 <useSSL>false</useSSL>
     </Node>
-
-
     <Node name="Prepare Request" log=""
           type="com.itko.lisa.utils.ParseTextContentNode" 
           version="1" 

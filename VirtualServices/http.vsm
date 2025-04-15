@@ -4,13 +4,13 @@
 
 <meta>
    <create version="8.0" buildNumber="8.0.0.755" author="admin" date="08/19/2014" host="panad01mac140" />
-   <lastEdited version="8.0" buildNumber="8.0.0.755" author="admin" date="09/04/2014" host="panad01mac140" />
+   <lastEdited version="10.8.1" buildNumber="10.8.1.2174" author="admin" date="04/15/2025" host="WIN-723B93H8VPG" />
 </meta>
 
 <id>42E6CED3280411E497771040F3ADD454</id>
 <Documentation>{{LISA_PROJ_ROOT}}/VirtualServices/VRScenarios/http.vrs</Documentation>
 <IsInProject>true</IsInProject>
-<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj04LjAgKDguMC4wLjc1NSB1bml4KSZub2Rlcz0tNDAwNzgyNDk3</sig>
+<sig>ZWQ9NSZ0Y3Y9NSZsaXNhdj0xMC44LjEgKDEwLjguMS4yMTc0KSZub2Rlcz0tNDAwNzgyNDk3</sig>
 <subprocess>false</subprocess>
 
 <initState>
@@ -31,6 +31,7 @@
           quiet="true" 
           next="Virtual Service Router" > 
 
+<Documentation>Virtual HTTPS Listener 8001</Documentation>
 
       <!-- Assertions -->
 <CheckResult assertTrue="true" name="If being efficient" type="com.itko.lisa.vse.stateful.AssertOnExecutionMode">
@@ -43,9 +44,11 @@
 <outputAsObject>true</outputAsObject>
 <onExceptionStep>abort</onExceptionStep>
 <listenPort>8001</listenPort>
+<bindAddress></bindAddress>
 <basePath>/</basePath>
 <bindOnly>false</bindOnly>
 <useSSL>false</useSSL>
+<sslClientAuthType>none</sslClientAuthType>
     </Node>
 
 
@@ -136,6 +139,7 @@
 <hostHeaderPassThrough>false</hostHeaderPassThrough>
 <useSSLToServer>false</useSSLToServer>
 <useSSL>false</useSSL>
+<learnSuccessResponseOnly>false</learnSuccessResponseOnly>
     </Node>
 
 
@@ -154,10 +158,10 @@
     </Node>
 
 
-    <Node name="abort" log="The test was aborted"
-          type="com.itko.lisa.test.AbortStep" 
+    <Node name="end" log=""
+          type="com.itko.lisa.test.NormalEnd" 
           version="1" 
-          uid="42E6CED9280411E497771040F3ADD454" 
+          uid="42E6CED5280411E497771040F3ADD454" 
           think="0h" 
           useFilters="true" 
           quiet="true" 
@@ -178,10 +182,10 @@
     </Node>
 
 
-    <Node name="end" log=""
-          type="com.itko.lisa.test.NormalEnd" 
+    <Node name="abort" log="The test was aborted"
+          type="com.itko.lisa.test.AbortStep" 
           version="1" 
-          uid="42E6CED5280411E497771040F3ADD454" 
+          uid="42E6CED9280411E497771040F3ADD454" 
           think="0h" 
           useFilters="true" 
           quiet="true" 

@@ -18,7 +18,7 @@
                 <parameter name="Content-Type">text/xml; charset=utf-8</parameter>
                 <parameter name="SOAPAction">&quot;&quot;</parameter>
                 <parameter name="User-Agent">Axis/1.4-LISA</parameter>
-                <parameter name="Host">localhost:8080</parameter>
+                <parameter name="Host">localhost:18080</parameter>
                 <parameter name="Content-Length">963</parameter>
               </metaData>
             </request>
@@ -50,7 +50,7 @@
             <parameter name="Content-Type">text/xml; charset=utf-8</parameter>
             <parameter name="SOAPAction">&quot;&quot;</parameter>
             <parameter name="User-Agent">Axis/1.4-LISA</parameter>
-            <parameter name="Host">localhost:8080</parameter>
+            <parameter name="Host">localhost:18080</parameter>
             <parameter name="Content-Length">963</parameter>
           </metaData>
         </request>
@@ -85,7 +85,7 @@
                 <parameter name="Content-Type">text/xml; charset=utf-8</parameter>
                 <parameter name="SOAPAction">&quot;&quot;</parameter>
                 <parameter name="User-Agent">Axis/1.4-LISA</parameter>
-                <parameter name="Host">localhost:8080</parameter>
+                <parameter name="Host">localhost:18080</parameter>
                 <parameter name="Content-Length">829</parameter>
               </metaData>
             </request>
@@ -116,7 +116,7 @@
             <parameter name="Content-Type">text/xml; charset=utf-8</parameter>
             <parameter name="SOAPAction">&quot;&quot;</parameter>
             <parameter name="User-Agent">Axis/1.4-LISA</parameter>
-            <parameter name="Host">localhost:8080</parameter>
+            <parameter name="Host">localhost:18080</parameter>
             <parameter name="Content-Length">829</parameter>
           </metaData>
         </request>
@@ -151,7 +151,7 @@
                 <parameter name="Content-Type">text/xml; charset=utf-8</parameter>
                 <parameter name="SOAPAction">&quot;&quot;</parameter>
                 <parameter name="User-Agent">Axis/1.4-LISA</parameter>
-                <parameter name="Host">localhost:8080</parameter>
+                <parameter name="Host">localhost:18080</parameter>
                 <parameter name="Content-Length">833</parameter>
               </metaData>
             </request>
@@ -182,7 +182,7 @@
             <parameter name="Content-Type">text/xml; charset=utf-8</parameter>
             <parameter name="SOAPAction">&quot;&quot;</parameter>
             <parameter name="User-Agent">Axis/1.4-LISA</parameter>
-            <parameter name="Host">localhost:8080</parameter>
+            <parameter name="Host">localhost:18080</parameter>
             <parameter name="Content-Length">833</parameter>
           </metaData>
         </request>
@@ -217,7 +217,7 @@
               <parameter name="HTTP-Version">HTTP/1.1</parameter>
               <parameter name="Pragma">no-cache</parameter>
               <parameter name="User-Agent">Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)</parameter>
-              <parameter name="Host">localhost:8080</parameter>
+              <parameter name="Host">localhost:18080</parameter>
             </metaData>
           </request>
           <responses>
@@ -245,7 +245,7 @@
           <parameter name="HTTP-Version">HTTP/1.1</parameter>
           <parameter name="Pragma">no-cache</parameter>
           <parameter name="User-Agent">Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)</parameter>
-          <parameter name="Host">localhost:8080</parameter>
+          <parameter name="Host">localhost:18080</parameter>
         </metaData>
       </request>
       <responses>

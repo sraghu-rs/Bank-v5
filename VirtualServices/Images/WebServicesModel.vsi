@@ -18,7 +18,7 @@
 <p n="Content-Type">text/xml; charset=utf-8</p>
 <p n="SOAPAction">&quot;&quot;</p>
 <p n="User-Agent">Axis/1.4-LISA</p>
-<p n="Host">localhost:8080</p>
+<p n="Host">localhost:38080</p>
 <p n="Content-Length">963</p>
 </m>
 </rq>
@@ -50,7 +50,7 @@
 <p n="Content-Type" t="meta:">text/xml; charset=utf-8</p>
 <p n="SOAPAction" t="meta:">&quot;&quot;</p>
 <p n="User-Agent" t="meta:">Axis/1.4-LISA</p>
-<p n="Host" t="meta:">localhost:28080</p>
+<p n="Host" t="meta:">localhost:38080</p>
 <p n="Content-Length" t="meta:">963</p>
 </m>
 </rq>
@@ -85,7 +85,7 @@
 <p n="Content-Type">text/xml; charset=utf-8</p>
 <p n="SOAPAction">&quot;&quot;</p>
 <p n="User-Agent">Axis/1.4-LISA</p>
-<p n="Host">localhost:8080</p>
+<p n="Host">localhost:38080</p>
 <p n="Content-Length">829</p>
 </m>
 </rq>
@@ -116,7 +116,7 @@
 <p n="Content-Type" t="meta:">text/xml; charset=utf-8</p>
 <p n="SOAPAction" t="meta:">&quot;&quot;</p>
 <p n="User-Agent" t="meta:">Axis/1.4-LISA</p>
-<p n="Host" t="meta:">localhost:28080</p>
+<p n="Host" t="meta:">localhost:38080</p>
 <p n="Content-Length" t="meta:">829</p>
 </m>
 </rq>
@@ -151,7 +151,7 @@
 <p n="Content-Type">text/xml; charset=utf-8</p>
 <p n="SOAPAction">&quot;&quot;</p>
 <p n="User-Agent">Axis/1.4-LISA</p>
-<p n="Host">localhost:8080</p>
+<p n="Host">localhost:38080</p>
 <p n="Content-Length">833</p>
 </m>
 </rq>
@@ -182,7 +182,7 @@
 <p n="Content-Type" t="meta:">text/xml; charset=utf-8</p>
 <p n="SOAPAction" t="meta:">&quot;&quot;</p>
 <p n="User-Agent" t="meta:">Axis/1.4-LISA</p>
-<p n="Host" t="meta:">localhost:28080</p>
+<p n="Host" t="meta:">localhost:38080</p>
 <p n="Content-Length" t="meta:">833</p>
 </m>
 </rq>
@@ -245,7 +245,7 @@
 <p n="HTTP-Version" t="meta:">HTTP/1.1</p>
 <p n="Pragma" t="meta:">no-cache</p>
 <p n="User-Agent" t="meta:">Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)</p>
-<p n="Host" t="meta:">localhost:28080</p>
+<p n="Host" t="meta:">localhost:38080</p>
 </m>
 </rq>
 <rs>
